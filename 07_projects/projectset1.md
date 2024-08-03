@@ -3,7 +3,7 @@
 ## project link 
 [Click here](https://stackblitz.com/edit/dom-poject-chaiaurcode?file=index.html)
 
-## project 1
+## project 1 solution
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
@@ -33,7 +33,7 @@ buttons.forEach(function (button) {
 });
 ```
 
-## project 2
+## project 2 solution
 
 ``` javascript
 const form = document.querySelector('form');
@@ -56,4 +56,19 @@ form.addEventListener(function (e) {
   }
 });
 ```
+
+
+## project 3
+```javascript
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock');
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleDateString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+```
+
 
